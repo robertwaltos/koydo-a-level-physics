@@ -1,0 +1,45 @@
+// A Level Physics Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM107",
+  slug: "a-level-physics",
+  name: "A Level Physics",
+  fullName: "A Level Physics",
+  alias: "A Level Physics",
+  family: "A Level",
+  category: "School exams",
+  subcategory: "Senior secondary qualification",
+  country: "United Kingdom",
+  region: "EMEA",
+  languages: ["English"],
+  estimatedAnnualTakers: "high",
+  testingWindow: "May-Jun",
+  schedulePattern: "Annual",
+  ageGroup: "16-18",
+  targetUser: "School student",
+  delivery: "Paper-based",
+  questionTypes: ["Structured response"],
+  adaptivity: "Linear",
+  sections: "3 papers",
+  scoringMode: "A*-E",
+  essayOrSpeaking: "No",
+  ipRisk: "Low",
+  contentReuse: "advanced_science",
+  uiEngine: "paper_structured_response",
+  monetizationPotential: "High",
+  tier: "Tier 3",
+  launchWave: "Wave 5",
+  themeColor: "#D97706",
+  themeColorDark: "#B45309",
+  localizationComplexity: "Low",
+  offlineNeeded: true,
+  mobileFirst: true,
+  locale: "en",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;

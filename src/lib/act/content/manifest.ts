@@ -20,8 +20,8 @@ export interface TopicManifest {
   title: string;
   icon: string;
   color: string;
-  questionTarget: number;
-  activityTypes: ActivityType[];
+  minQuestionCount: number;
+  requiredActivityTypes: ActivityType[];
 }
 
 export interface ContentManifest {
@@ -44,8 +44,8 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Mechanics",
     icon: "⚙️",
     color: "#DC2626",
-    questionTarget: 700,
-    activityTypes: ["multiple_choice", "calculation", "whiteboard"],
+    minQuestionCount: 700,
+    requiredActivityTypes: ["multiple_choice", "calculation", "whiteboard"],
   },
   {
     id: "electricity",
@@ -53,8 +53,8 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Electricity & Magnetism",
     icon: "⚡",
     color: "#7C3AED",
-    questionTarget: 600,
-    activityTypes: ["multiple_choice", "calculation"],
+    minQuestionCount: 600,
+    requiredActivityTypes: ["multiple_choice", "calculation"],
   },
   {
     id: "waves",
@@ -62,8 +62,8 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Waves & Optics",
     icon: "〰️",
     color: "#059669",
-    questionTarget: 500,
-    activityTypes: ["multiple_choice", "diagram_label"],
+    minQuestionCount: 500,
+    requiredActivityTypes: ["multiple_choice", "diagram_label"],
   },
   {
     id: "thermodynamics",
@@ -71,8 +71,8 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Thermodynamics",
     icon: "🌡️",
     color: "#DC2626",
-    questionTarget: 500,
-    activityTypes: ["multiple_choice", "calculation"],
+    minQuestionCount: 500,
+    requiredActivityTypes: ["multiple_choice", "calculation"],
   },
   {
     id: "modern-physics",
@@ -80,8 +80,8 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Modern Physics",
     icon: "⚛️",
     color: "#D97706",
-    questionTarget: 400,
-    activityTypes: ["multiple_choice"],
+    minQuestionCount: 400,
+    requiredActivityTypes: ["multiple_choice"],
   }
   ],
 };
